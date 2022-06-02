@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+	printf("Size of a char: \lu byte(s)\n",sizeof(char));
 	return (0);
 }
