@@ -18,6 +18,7 @@ int main(void)
 	while (m < 103)
 	{
 		putchar(m);
+		m++;
 	}
 	putchar('\n');
 	return (0);
