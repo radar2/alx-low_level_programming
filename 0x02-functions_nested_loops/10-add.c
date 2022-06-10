@@ -4,12 +4,13 @@
 /**
  * add - alphabet lowercase
  *
- *@c: the char value
+ *@a: first number
+ *@b: Second number
  *
  * Return: return sum a and b
  */
 
-int add(int c)
+int add(int a, int b)
 {
 	return ((a + b));
 }
