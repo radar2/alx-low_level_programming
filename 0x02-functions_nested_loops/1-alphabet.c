@@ -18,5 +18,4 @@ void print_alphabet(void)
 		_putchar(ch);
 		ch++;
 	}
-	_putchar(10);
 }
