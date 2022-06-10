@@ -12,7 +12,7 @@ void print_alphabet(void)
 	char ch;
 
 	ch = 97;
-	while (ch < 122)
+	while (ch < 123)
 	{
 		_putchar(ch);
 		ch++;
