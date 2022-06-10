@@ -1,6 +1,5 @@
 #include <unistd.h>
-
-int _putchar(char c);
+#include "main.h"
 
 /**
  * print_alphabet - alphabet
@@ -18,4 +17,5 @@ void print_alphabet(void)
 		_putchar(ch);
 		ch++;
 	}
+	_putchar(10);
 }
