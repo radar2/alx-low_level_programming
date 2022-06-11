@@ -1,6 +1,6 @@
 #include <ctype.h>
 /**
- * _isdigit - function that checks for a digit 
+ * _isdigit - function that checks for a digit
  * @c: Input param
  * Return: 1 if c is digit, 0 otherwise
  */
