@@ -19,22 +19,11 @@ int keygen()
 {
 	int i, n, sum;
 	char pass[12];
-//	char letter;
-//	char capLetter;
 
 	i = 0;
 	n = 0;
 	sum = 0;
 	srand(time(NULL));
-	/*for (i = 0; i < ; i++)
-   	{
-                pass[i] = rand() % 9;
-                capLetter = 'A' + (rand() % 26);
-		pass[i + 2] = capLetter;
-		letter = 'a' + (rand() % 26);
-		pass[i + 3] = letter;
-	        printf("%d%c%c", pass[i], pass[i + 2], pass[i + 3]);
-	}*/
 	while (sum < SUM)
 	{
 		if (SUM - sum < 48)
@@ -53,4 +42,5 @@ int keygen()
 		
 	pass[i] = '\0';
 	printf("%s\n", pass);
-	
+	return (0);
+}	
