@@ -6,14 +6,14 @@
  * @c: Input
  * Return: Uppercase string
  */
-char *string_toupper(char *c)
+char *string_toupper(char *n)
 {
-	int i, tmp;
+	int i;
 
-	for (i = 0; c[i] != '\0'; i++)
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		if (c[i] >= 'a' && c[i] <= 'z')
-			c[i] = c[i] - 32;
+		if (n[i] >= 'a' && n[i] <= 'z')
+			n[i] = n[i] - 32;
 	}
-	return (c);
+	return (n);
 }
