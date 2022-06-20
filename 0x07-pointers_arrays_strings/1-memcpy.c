@@ -13,6 +13,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	char *q = src;
 
 	while (n-- > 0)
-		*p++ = q++;
+		*p++ = *q++;
 	return (p);
 }
