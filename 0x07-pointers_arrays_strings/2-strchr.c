@@ -6,20 +6,15 @@
  * @c: Input
  * Return: Pointer
  */
-
 char *_strchr(char *s, char c)
 {
-	char *p = s;
-	size_t len = strlen(s);
-	size_t i;
+	int i;
 
-	i = 0;
-	while (i < len)
+	for (i = 0; s[i] >= '\0'; i++)
 	{
-		if (*p++ == c)
+		if (s[i] == c)
 			return (s + i);
-		i++;
 	}
-	return (NULL);
 
+	return (NULL);
 }
