@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * _pow_recursion - a function that return the value raised to the power
- * @x: input one
- * @y: input two
- * Return: int 
+ * @x: input
+ * @y: input
+ * Return: int
  */
 int _pow_recursion(int x, int y)
 {
