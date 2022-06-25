@@ -11,9 +11,9 @@ int main(int argc, char *argv[])
 	int i, res;
 
 	res = 0;
-	if (argc < 2)
+	if (argc < 1)
 	{
-		printf("%d\n", res);
+		return (EXIT_SUCCESS);
 	}
 	else
 	{
