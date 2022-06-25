@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+int change(int cents);
 /**
  * main - program that print th number of argument
  * @argc: the size of argv
  * @argv: array of argument
  * Return: Always 0 (Success)
  */
-int main(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc != 2)
 	{
