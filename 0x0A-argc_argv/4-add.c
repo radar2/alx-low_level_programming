@@ -8,25 +8,21 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, res;
+	int i, sum = 0;
 
-	res = 0;
 	if (argc < 1)
+		return (0);
+
+	for (i = 1; i < argc; i++)
 	{
-		return (EXIT_SUCCESS);
-	}
-	else
-	{
-		for (i = 1; i < argc; i++)
+		if (!atoi(argv[i]))
 		{
-			if (!atoi(argv[i]))
-			{
-				printf("Error\n");
-				return (EXIT_FAILURE);
-			}
-			res = res + atoi(argv[i]);
+			printf("%s\n", "Error");
+			return (1);
 		}
-		printf("%d\n", res);
+		sum += atoi(argv[i]);
 	}
-	return (EXIT_SUCCESS);
+	printf("%d\n", sum);
+
+	return (0);
 }
