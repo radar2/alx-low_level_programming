@@ -1,27 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "main.h"
 /**
- * _strdup - a function thats a pointer
- * @str: Input
- * Return: pointer
+ * alloc_grid - nested loop to make grid
+ * @width: width input
+ * @height: height input
+ * Return: pointer to 2 dim. array
  */
-char *_strdup(char *str)
+int **alloc_grid(int width, int height)
 {
-	size_t size;
-	size_t i;
-	char *ptr;
+	int **ptr;
+	int i, k;
 
-	if (str == NULL)
+	if (width <= 0 || height <= 0)
 		return (NULL);
-	size = strlen(str);
-	ptr = malloc(size * sizeof(char));
+	ptr  = malloc(height * sizeof(int));
 	if (ptr == NULL)
 		return (NULL);
-
-	for (i = 0; i < size; i++)
-		*(ptr + i) = *(str + i);
-
+	for (i = 0; i < height; i++)
+	{
+		ptr[i] = malloc(width * sizeof(int));
+		if (ptr[i] == NULL)
+			return (NULL);
+		for (k = 0; k < width; k++)
+			ptr[i][k] = 0;
+	}
 	return (ptr);
 }
