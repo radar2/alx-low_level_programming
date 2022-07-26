@@ -1,34 +1,31 @@
 #include "main.h"
 /**
- * create_file - Entry Point
- * @filename: file name
- * @text_content: null terminated string to write
- * Return: 1
+ * create_file - makes a file and fills it with contents
+ * @filename: name of file passed
+ * @text_content: text to write to file
+ * Return: 1 on success
  */
 int create_file(const char *filename, char *text_content)
 {
-	int file, i = 0;
+	ssize_t file_d, bytes, len;
 
-	if (filename == NULL)
-		return (-1);
-
-	file = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
-	if (file == -1)
-		return (-1);
-
-	while (text_content[i])
-		i++;
-
-	if (text_content == NULL)
+	if (filename)
 	{
-		close(file);
-		return (-1);
+		file_d = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
+		if (file_d == -1)
+			return (-1);
 	}
 	else
-	{
-		write(file, text_content, i);
-	}
+		return (-1);
 
-	close(file);
+	if (text_content)
+	{
+		for (len = 0; text_content[len] != '\0'; len++)
+			;
+		bytes = write(file_d, text_content, len);
+		if (bytes == -1)
+			return (-1);
+	}
+	close(file_d);
 	return (1);
 }
