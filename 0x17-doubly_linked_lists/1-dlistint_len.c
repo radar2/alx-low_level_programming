@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * dlistint_len -  a function that return number 
+ * dlistint_len -  a function that return number
  * @h: pointer of dlistint_t
  * Return: number of node
  */
