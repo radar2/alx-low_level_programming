@@ -1,4 +1,4 @@
-#include "search_search.h"
+#include "search_algos.h"
 
 /**
  * linear_seeach - a function that search for a value in an array
