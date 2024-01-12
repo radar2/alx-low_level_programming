@@ -26,7 +26,7 @@ int _islower(int c)
 
 
 /**
- * _islower - Function
+ * _isalpha - Function
  * @c: Argument
  *
  * Return: int
@@ -110,7 +110,7 @@ char *_strcpy(char *dest, char *src)
 
 
 /**
- * _strcat - Function
+ * _atoi - Function
  * @s: Pointer
  *
  * Return: int
