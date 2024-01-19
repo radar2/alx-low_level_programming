@@ -63,7 +63,7 @@ char *multiply(char *num1, char *num2)
 	if (i == len1 + len2)
 		return ("0");
 
-	*result_str = malloc((len1 + len2 - i + 1) * sizeof(char));
+	result_str = malloc((len1 + len2 - i + 1) * sizeof(char));
 	k = 0;
 	while (i < len1 + len2)
 		result_str[k++] = result[i++] + '0';
@@ -79,12 +79,10 @@ int main(int argc, char *argv[])
 {
 	if (argc != 3 || !is_digit(argv[1]) || !is_digit(argv[2]))
 	{
-		printf("Error\n");
 		return (98);
 	}
 
 	char *result = multiply(argv[1], argv[2]);
-	printf("%s\n", result);
 	free(result);
 
 	return (0);
