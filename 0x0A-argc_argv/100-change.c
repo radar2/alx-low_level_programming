@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int[] coins;
-	int num_coins, count, cents;
+	int num_coins, count, cents, i;
 
 	if (argc != 2)
 	{
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	num_coins = sizeof(coins) / sizeof(coins[0]);
 	count = 0;
 
-	for (int i = 0; i < num_coins; i++)
+	for (i = 0; i < num_coins; i++)
 	{
 		while (cents >= coins[i])
 		{
