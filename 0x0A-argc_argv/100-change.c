@@ -27,7 +27,6 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	coins[] = {25, 10, 5, 2, 1};
 	num_coins = sizeof(coins) / sizeof(coins[0]);
 	count = 0;
 
