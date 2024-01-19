@@ -86,12 +86,14 @@ char *multiply(char *num1, char *num2)
  */
 int main(int argc, char *argv[])
 {
+	char *result;
+
 	if (argc != 3 || !is_digit(argv[1]) || !is_digit(argv[2]))
 	{
 		return (98);
 	}
 
-	char *result = multiply(argv[1], argv[2]);
+	result = multiply(argv[1], argv[2]);
 	free(result);
 
 	return (0);
