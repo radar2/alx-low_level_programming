@@ -3,11 +3,13 @@
 
 /**
  * main - Entry point of the program.
+ * @argc: argument size
+ * argv: array of argument
  *
  * Return: 0 on success.
  */
-int main(void)
+int main(int argc, char *argv[])
 {
-	printf("%s\n", __FILE__);
-	return (0);
+	printf("%s\n", argv[0]);
+	return (argc);
 }
