@@ -2,7 +2,7 @@
 
 
 /**
- * main - program that prints the number of arguments passed into it.
+ * main - Entry point of the program.
  * @argc: argument size
  * @argv: array of argument
  *
@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("%s\n", argc);
+	printf("%s\n", argv[0]);
 	return (argc);
 }
 
