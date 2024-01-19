@@ -18,6 +18,7 @@ int is_digit(char *str)
 	return (1);
 }
 
+
 /**
  * multiply - Multiply two positive numbers
  * @num1: The first number as a string
@@ -55,7 +56,6 @@ char *multiply(char *num1, char *num2)
 		result[i + j + 1] = carry;
 	}
 
-	// Find the length of the result
 	i = 0;
 	while (i < len1 + len2 && result[i] == 0)
 		i++;
@@ -65,6 +65,7 @@ char *multiply(char *num1, char *num2)
 
 	result_str = malloc((len1 + len2 - i + 1) * sizeof(char));
 	k = 0;
+
 	while (i < len1 + len2)
 		result_str[k++] = result[i++] + '0';
 
@@ -75,6 +76,14 @@ char *multiply(char *num1, char *num2)
 	return (result_str);
 }
 
+
+/**
+ * main - Entry point of program.
+ * @argc: argumentlength
+ * @argv: array of arguments
+ *
+ * Return: interger
+ */
 int main(int argc, char *argv[])
 {
 	if (argc != 3 || !is_digit(argv[1]) || !is_digit(argv[2]))
