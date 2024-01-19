@@ -13,7 +13,7 @@ int main(int argc  __attribute__((unused)), char *argv[])
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
 
 	int num1 = atoi(argv[1]);
