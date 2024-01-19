@@ -1,4 +1,5 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 
 /**
@@ -28,11 +29,12 @@ int is_digit(char *str)
  */
 char *multiply(char *num1, char *num2)
 {
-	int len1 = 0, len2 = 0, i, j, carry = 0;
+	int len1 = 0, len2 = 0, i, j, carry;
 	int k;
 	int *result;
 	char *result_str;
 
+	carry = 0
 	while (num1[len1] != '\0')
 		len1++;
 
