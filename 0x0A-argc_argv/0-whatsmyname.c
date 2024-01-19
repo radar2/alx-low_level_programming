@@ -4,7 +4,7 @@
 /**
  * main - Entry point of the program.
  * @argc: argument size
- * argv: array of argument
+ * @argv: array of argument
  *
  * Return: 0 on success.
  */
