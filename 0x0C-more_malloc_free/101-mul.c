@@ -94,6 +94,7 @@ int main(int argc, char *argv[])
 	}
 
 	result = multiply(argv[1], argv[2]);
+	printf("%s\n", result);
 	free(result);
 
 	return (0);
