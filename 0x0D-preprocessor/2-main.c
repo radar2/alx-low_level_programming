@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	print(__FILE__);
+	printf(__FILE__);
 
 	return (0);
 }
