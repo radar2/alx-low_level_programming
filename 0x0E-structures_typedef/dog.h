@@ -3,7 +3,7 @@
 
 
 /**
- * dog - Represents information about a dog
+ * struct dog - Represents information about a dog
  * @name: The name of the dog
  * @age: The age of the dog
  * @owner: The owner of the dog
@@ -14,6 +14,5 @@ struct dog
 	float age;
 	char *owner;
 };
-
 
 #endif /* DOG_H */
